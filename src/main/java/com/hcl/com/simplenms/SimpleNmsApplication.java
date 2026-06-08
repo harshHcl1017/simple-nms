@@ -1,0 +1,14 @@
+package com.hcl.com.simplenms;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SimpleNmsApplication {
+
+	public static void main(String[] args) {
+
+        SpringApplication.run(SimpleNmsApplication.class, args);
+	}
+
+}
