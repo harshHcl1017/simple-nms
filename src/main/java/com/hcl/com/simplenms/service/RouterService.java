@@ -19,23 +19,8 @@ public class RouterService {
         return repository.findAll();
     }
 
-    public List<Router> getRouterById(String routerId) {
-        return repository.findByRouterId(routerId);
-                /*Collections.singletonList(
-                repository.findByRouterId(routerId)
-                        .orElseThrow(() ->
-                                new RuntimeException("Router not found")));*/
-    }
-
-    public List<Router> getByStatus(String status) {
-        return repository.findByStatus(status);
-    }
-
-    public List<Router> getByCPU() {
-        return repository.findByCpuUsageGreaterThan(80.00);
-    }
-
     public void save(Router router) {
         repository.save(router);
     }
+
 }
